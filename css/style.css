@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root{
+    --primary-color: #f1faee;
+    --secondary-color: #a8dadc;
+    --font-color: #272727;
+    --link-color: #898d91;
+    --hover-color:#3e475f;    
+}
+
+/* Classe do tema escuro com as variaveis da sua cor */
+.dark-theme {
+    --primary-color: #211522;
+    --secondary-color: #C197D2;
+    --font-color: #f1faee;
+    --link-color: #C197D2;
+    --hover-color:#613659;
+    transition: ease-in-out 1s;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;    
+    font-size: 2rem;
+    padding: 2rem;
+    justify-content: space-between;    
+}
+
+header a {
+    text-decoration: none;
+    margin: 1rem;
+    font-weight: 500;
+    color: var(--link-color);
+    transition: 1s ease-in-out;
+}
+header a:hover{
+    color: var(--hover-color);
+}
+
+header img {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;  
+}
+
+
+.todo-input-pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.todo-input{
+    width: 100%;
+    padding: .2rem;
+    margin: .2rem;
+}
+
+.todo-button{
+    margin: 0.3rem;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 100%;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.todo{
+    display: flex;
+    margin: 1rem;
+    padding: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 5rem;
+    max-width: 26rem;
+    min-width: 200px;
+    color: var(--font-color);
+    border-radius: .5rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 20px #94868625;
+    position: relative;
+    transition: all .25s ease;
+}
+
+.todo-item{
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.todo-descricao{
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.complete-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2a9d8f;
+}
+.delete-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #e63946;
+}
+
+.todo-data{
+    position: absolute;
+    top: 5%;
+}
+
+.todo-data::before{
+    content: 'Criado em: ';
+}
+
+.todo-data-final::before{
+    content: 'Finalizar em: ';
+}
+
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
+
+/* classe adicionada ao apertarmos o botão que a tarefa foi concluida */
+.completed{
+    text-decoration: line-through;
+    opacity:  .5;
+}
+/* classe adicionanda enquanto a tarefa não está feita */
+.not-completed {
+    font-weight: bold;
+}
+.fall{
+    transform: translate(8rem) rotate(20deg);
+    opacity: 0;
+}
+
+select{
+    appearance: none;
+    outline: none;
+    border: none;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.select{
+    margin: 1rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
