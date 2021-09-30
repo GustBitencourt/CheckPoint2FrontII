@@ -28,4 +28,4 @@ Olá Houser, tudo bem com você? Esta atividade tem como objetivo servir como se
 
    5.ENTREGA: a-Devem ser entregues os arquivos HTML5, CSS3 e Javascript do projeto via Git/Github.
    
-   Link: https://gustbitencourt.github.io/CheckPoint2FrontII/
+   LINK PROJETO: https://gustbitencourt.github.io/CheckPoint2FrontII/
