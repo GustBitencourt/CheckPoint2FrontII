@@ -27,3 +27,5 @@ Olá Houser, tudo bem com você? Esta atividade tem como objetivo servir como se
    4.Agora nós vamos criar uma outra página, onde iremos consumir uma api de lista de tarefas. a-O end-point “https://jsonplaceholder.typicode.com/todos/” responde com um JSON com 200 tarefas. Essas 200 tarefas devem ser consumidas pelo JS e renderizadas também como cards na página. b-Nas tarefas onde o atributo “completed": true” o texto do atributo title deve estar tachado. Pois significa que a tarefa ja foi completada. c-Nas tarefas onde o atributo “completed": false” o texto do atributo title deve estar em negrito. Pois significa que a tarefa está a fazer. d-Exiba também o conteúdo do atributo “id”.
 
    5.ENTREGA: a-Devem ser entregues os arquivos HTML5, CSS3 e Javascript do projeto via Git/Github.
+   
+   Link: https://gustbitencourt.github.io/CheckPoint2FrontII/
